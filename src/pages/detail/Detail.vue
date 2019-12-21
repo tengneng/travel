@@ -35,7 +35,7 @@ export default {
 	},
 	methods: {
 		getDetailInfo () {
-			axios.get('https://github.com/tengneng/travel/blob/master/docs/static/mock/detail.json', {
+			axios.get('/api/detail.json', {
 				params: {
 					id:this.$route.params.id
 				}

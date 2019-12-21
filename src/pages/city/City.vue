@@ -30,7 +30,7 @@ export default {
 	},
 	methods: {
 		getCityInfo () {
-			axios.get('https://github.com/tengneng/travel/blob/master/docs/static/mock/city.json')
+			axios.get('/api/city.json')
 			  .then(this.handleGetCityInfoSucc)
 		},
 		handleGetCityInfoSucc (res) {
